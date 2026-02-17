@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nico66fx PRO - Trading Algorítmico Profesional</title>
+    <meta name="description"
+        content="Comunidad exclusiva de trading algorítmico. Accede a bots rentables, tutoriales y soporte de por vida.">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Output CSS -->
+    <link href="./assets/output.css" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-gray-950 text-white overflow-x-hidden selection:bg-brand-400 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/10 bg-gray-950/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center md:justify-between h-16 relative">
+                <div class="flex items-center gap-3">
+                    <span class="font-bold text-lg tracking-tight">nico66fx <span
+                            class="text-brand-400">PRO</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#hero"
+                            class="hover:text-brand-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Inicio</a>
+                        <a href="#resultados"
+                            class="hover:text-brand-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Resultados</a>
+                        <a href="#bots"
+                            class="hover:text-brand-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Bots</a>
+                        <a href="https://t.me/cfcommfree" target="_blank"
+                            class="bg-brand-500/15 text-brand-300 border border-brand-400/30 hover:bg-brand-500 hover:text-white px-4 py-2 rounded-full text-sm font-semibold transition-all">Telegram
+                            Free</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="absolute right-0 flex md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        <span class="sr-only">Open main menu</span>
+                        <i data-lucide="menu" class="block w-6 h-6"></i>
+                        <i data-lucide="x" class="hidden w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-gray-900/95 backdrop-blur-xl border-b border-gray-800 absolute w-full"
+            id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#hero"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium mobile-link">Inicio</a>
+                <a href="#resultados"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium mobile-link">Resultados</a>
+                <a href="#bots"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium mobile-link">Bots</a>
+                <a href="#pricing"
+                    class="text-brand-400 font-bold block px-3 py-2 rounded-md text-base mobile-link">Telegram Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+            <!-- Background Effects -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full z-0 pointer-events-none">
+                <div
+                    class="absolute top-20 left-1/4 w-96 h-96 bg-brand-500/15 rounded-full blur-[120px] animate-pulse-slow">
+                </div>
+                <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-sky-400/10 rounded-full blur-[120px] animate-pulse-slow"
+                    style="animation-delay: 1.5s;"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+
+                <!-- Profile Image with Glow -->
+                <div class="relative mb-8 group cursor-pointer">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-brand-400 to-sky-400 rounded-full blur-lg opacity-60 group-hover:opacity-90 transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-gray-900 overflow-hidden bg-gray-800">
+                        <!-- Tu Foto de Perfil -->
+                        <img src="./assets/profile.jpg" alt="Nico" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute bottom-0 right-0 bg-green-500 w-6 h-6 rounded-full border-4 border-gray-900 tooltip"
+                        title="Online"></div>
+                </div>
+
+                <!-- Headlines -->
+                <h1
+                    class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400">
+                    Trading Algorítmico <br class="hidden md:block" />
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-sky-300">Profesional</span>
+                </h1>
+
+                <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Accede a mi portafolio personal de bots, tutoriales y una comunidad activa de traders. <span
+                        class="text-white font-semibold">Resultados Reales. Acceso de Por Vida.</span>
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col items-center gap-6 w-full">
+                    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+                        <a href="#pricing"
+                            class="btn-primary flex items-center justify-center gap-2 shadow-brand-500/20 shadow-lg px-8">
+                            <i data-lucide="zap" class="w-5 h-5"></i>
+                            <span>Acceder por 99€</span>
+                        </a>
+                        <a href="https://t.me/cfcommfree" target="_blank"
+                            class="flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-gray-700 hover:border-green-500/50 hover:bg-gray-800 transition-all duration-300 text-gray-300">
+                            <i data-lucide="trending-up" class="w-5 h-5 text-green-400"></i>
+                            <span>Ver Resultados Profits</span>
+                        </a>
+                    </div>
+
+                    <a href="https://wa.link/md9s5v" target="_blank"
+                        class="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors text-sm font-medium hover:underline decoration-green-500/30 underline-offset-4">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>¿Tienes dudas? Contactar por WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Stats / Trust Indicators -->
+                <div
+                    class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center border-t border-gray-800 pt-8 w-full max-w-4xl opacity-80">
+                    <div>
+                        <div class="text-3xl font-bold text-white">5+</div>
+                        <div class="text-sm text-gray-500 uppercase tracking-widest mt-1">Bots Activos</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-white">100%</div>
+                        <div class="text-sm text-gray-500 uppercase tracking-widest mt-1">Transparencia</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-white">PRO</div>
+                        <div class="text-sm text-gray-500 uppercase tracking-widest mt-1">Comunidad</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-white">Life</div>
+                        <div class="text-sm text-gray-500 uppercase tracking-widest mt-1">Acceso Vitalicio</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-gray-500">
+                <i data-lucide="chevron-down" class="w-6 h-6"></i>
+            </div>
+        </section>
+
+
+        <!-- Features / Bots Section -->
+        <section id="bots" class="py-24 relative">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-brand-500/5 blur-[120px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <span class="text-brand-400 font-semibold tracking-wider uppercase text-sm">Arsenal de
+                        Trading</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Bots Profesionales Incluidos</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        Accede a las mismas herramientas que uso diariamente. Todo incluido.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Bot Card 1 -->
+                    <div class="card-glass group hover:bg-gray-800/80">
+                        <div
+                            class="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center text-yellow-400 mb-4 group-hover:scale-110 transition-transform">
+                            <i data-lucide="zap" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">RAW XAU</h3>
+                        <p class="text-sm text-gray-400 mb-4 h-10">Estrategia pura de acción de precio para el Oro
+                            (XAUUSD).</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700/60 rounded text-xs text-gray-300">Scalping</span>
+                            <span class="px-2 py-1 bg-gray-700/60 rounded text-xs text-gray-300">Intradía</span>
+                        </div>
+                        <button
+                            class="w-full py-2 bg-gray-700 hover:bg-brand-500 rounded-lg text-sm font-semibold transition-colors cursor-pointer">Ver
+                            auditada</button>
+                    </div>
+
+                    <!-- Bot Card 2 -->
+                    <div class="card-glass group hover:bg-gray-800/80">
+                        <div
+                            class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                            <i data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">BOT GPT</h3>
+                        <p class="text-sm text-gray-400 mb-4 h-10">Inteligencia Artificial optimizado para Axi Select
+                            para el análisis de mercado.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700/60 rounded text-xs text-gray-300">AI</span>
+                            <span class="px-2 py-1 bg-gray-700/60 rounded text-xs text-gray-300">Forex</span>
+                        </div>
+                        <button
+                            class="w-full py-2 bg-gray-700 hover:bg-brand-500 rounded-lg text-sm font-semibold transition-colors cursor-pointer">Ver
+                            auditada</button>
+                    </div>
+
+                    <!-- Bot Card 3 -->
+                    <div class="card-glass group hover:bg-gray-800/80">
+                        <div
+                            class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center text-red-400 mb-4 group-hover:scale-110 transition-transform">
+                            <i data-lucide="crosshair" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">SNIPER XAU</h3>
+                        <p class="text-sm text-gray-400 mb-4 h-10">Entradas precisas buscando ratios riesgo/beneficio
+                            altos.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700/60 rounded text-xs text-gray-300">Swing</span>
+                            <span class="px-2 py-1 bg-gray-700/60 rounded text-xs text-gray-300">Precisión</span>
+                        </div>
+                        <button
+                            class="w-full py-2 bg-gray-700 hover:bg-brand-500 rounded-lg text-sm font-semibold transition-colors cursor-pointer">Ver
+                            auditada</button>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <p class="text-gray-500 text-sm mb-4">Y muchos más: Scalp EURUSD, Bot GRID...</p>
+                    <a href="https://www.myfxbook.com/members/gatewaymt4" target="_blank"
+                        class="text-brand-400 hover:text-white font-semibold transition-colors border-b border-brand-400/50 pb-1">Ver
+                        Auditadas Completas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-24 bg-gray-900/50 relative overflow-hidden">
+            <!-- Decoration -->
+            <div
+                class="absolute -right-20 top-40 w-96 h-96 bg-brand-500/8 rounded-full blur-[120px] pointer-events-none">
+            </div>
+            <div
+                class="absolute -left-20 bottom-40 w-96 h-96 bg-sky-400/8 rounded-full blur-[120px] pointer-events-none">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <span class="text-brand-400 font-semibold tracking-wider uppercase text-sm">Oferta Limitada</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Únete a la Élite del <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-sky-300">Algo
+                            Trading</span></h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        Una única inversión para transformar tu trading para siempre. Sin mensualidades ocultas.
+                    </p>
+                </div>
+
+                <div class="max-w-md mx-auto">
+                    <div
+                        class="card-glass relative transform hover:scale-105 transition-transform duration-300 border-brand-400/30 shadow-2xl shadow-brand-500/10">
+                        <div
+                            class="absolute top-0 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-500 to-brand-600 text-white text-xs font-bold px-4 py-1 rounded-b-lg shadow-lg">
+                            OFERTA LIMITADA
+                        </div>
+
+                        <div class="text-center pt-8 pb-8 border-b border-gray-700/50">
+                            <h3 class="text-2xl font-bold text-gray-100">Acceso Vitalicio</h3>
+                            <div class="mt-4 flex items-baseline justify-center gap-2">
+                                <span class="text-5xl font-bold text-white">99€</span>
+                                <span class="text-lg text-gray-500 line-through">299€</span>
+                            </div>
+                            <p class="text-sm text-brand-300 mt-2 font-medium">Pago único • Acceso de por vida</p>
+                        </div>
+
+                        <div class="py-8 px-4">
+                            <ul class="space-y-4 text-left">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-400 shrink-0 mt-0.5"></i>
+                                    <span class="text-gray-300">Pack Completo de <strong class="text-white">5+ Bots
+                                            Profesionales</strong></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-400 shrink-0 mt-0.5"></i>
+                                    <span class="text-gray-300">Actualizaciones y Nuevos Bots <strong
+                                            class="text-white">GRATIS</strong></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-gray-300">Acceso a Comunidad PRO (Chat Privado)</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-400 shrink-0 mt-0.5"></i>
+                                    <span class="text-gray-300">Tutoriales Paso a Paso y Soporte Directo</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-400 shrink-0 mt-0.5"></i>
+                                    <span class="text-gray-300">Herramientas: Copiadora de Trades y Scripts</span>
+                                </li>
+                            </ul>
+
+                            <div class="mt-8 space-y-3">
+                                <a href="https://buy.stripe.com/eVqcN75Ad0Dd6RXehP3AY0Q" target="_blank"
+                                    class="btn-primary w-full flex items-center justify-center gap-2 text-lg">
+                                    <span>Obtener Acceso Inmediato</span>
+                                    <i data-lucide="lock" class="w-5 h-5"></i>
+                                </a>
+                                <a href="https://wa.link/md9s5v" target="_blank"
+                                    class="w-full flex items-center justify-center gap-2 text-sm text-gray-400 hover:text-white transition-colors py-2 rounded-lg hover:bg-gray-800">
+                                    <i data-lucide="message-circle" class="w-4 h-4 text-green-500"></i>
+                                    <span>Resolver dudas antes de entrar</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-24">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12">Preguntas Frecuentes</h2>
+
+                <div class="space-y-4">
+                    <div class="card-glass p-0 overflow-hidden">
+                        <button
+                            class="w-full px-6 py-4 text-left flex justify-between items-center bg-gray-800/50 hover:bg-gray-800 transition-colors focus:outline-none cursor-pointer"
+                            onclick="this.nextElementSibling.classList.toggle('hidden');">
+                            <span class="font-semibold">¿Necesito experiencia previa en trading?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400"></i>
+                        </button>
+                        <div class="px-6 py-4 bg-gray-900/30 text-gray-400 border-t border-gray-800 hidden">
+                            No necesitas ser un experto. Incluimos tutoriales paso a paso desde la instalación de
+                            MT4/MT5 hasta la configuración de los bots. Además, la comunidad te ayudará en el proceso.
+                        </div>
+                    </div>
+
+                    <div class="card-glass p-0 overflow-hidden">
+                        <button
+                            class="w-full px-6 py-4 text-left flex justify-between items-center bg-gray-800/50 hover:bg-gray-800 transition-colors focus:outline-none cursor-pointer"
+                            onclick="this.nextElementSibling.classList.toggle('hidden');">
+                            <span class="font-semibold">¿Sirve para Cuentas de Fondeo (Prop Firms)?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400"></i>
+                        </button>
+                        <div class="px-6 py-4 bg-gray-900/30 text-gray-400 border-t border-gray-800 hidden">
+                            Sí, tenemos bots y configuraciones específicas diseñadas para pasar desafíos de empresas de
+                            fondeo, controlando el drawdown estrictamente.
+                        </div>
+                    </div>
+
+                    <div class="card-glass p-0 overflow-hidden">
+                        <button
+                            class="w-full px-6 py-4 text-left flex justify-between items-center bg-gray-800/50 hover:bg-gray-800 transition-colors focus:outline-none cursor-pointer"
+                            onclick="this.nextElementSibling.classList.toggle('hidden');">
+                            <span class="font-semibold">¿Qué broker recomiendas?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400"></i>
+                        </button>
+                        <div class="px-6 py-4 bg-gray-900/30 text-gray-400 border-t border-gray-800 hidden">
+                            Trabajamos bien con brokers ECN de bajo spread como IC Markets, Axi Select, o RoboForex.
+                            Dentro de la comunidad tenemos una lista de brokers probados.
+                        </div>
+                    </div>
+
+                    <div class="card-glass p-0 overflow-hidden">
+                        <button
+                            class="w-full px-6 py-4 text-left flex justify-between items-center bg-gray-800/50 hover:bg-gray-800 transition-colors focus:outline-none cursor-pointer"
+                            onclick="this.nextElementSibling.classList.toggle('hidden');">
+                            <span class="font-semibold">¿Es un pago único realmente?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400"></i>
+                        </button>
+                        <div class="px-6 py-4 bg-gray-900/30 text-gray-400 border-t border-gray-800 hidden">
+                            Sí. Pagas 99€ una sola vez y tienes acceso vitalicio a los bots actuales, futuras
+                            actualizaciones, nuevos lanzamientos y la comunidad.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="flex items-center gap-2 mb-4 md:mb-0">
+                    <span class="font-bold text-lg">nico66fx <span class="text-brand-400">PRO</span></span>
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="twitter"
+                            class="w-5 h-5"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="instagram"
+                            class="w-5 h-5"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="message-circle"
+                            class="w-5 h-5"></i></a>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 nico66fx PRO. Todos los derechos reservados.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-gray-300">Términos y Condiciones</a>
+                    <a href="#" class="hover:text-gray-300">Política de Privacidad</a>
+                    <a href="#" class="hover:text-gray-300">Descargo de Responsabilidad</a>
+                </div>
+            </div>
+            <div class="mt-8 text-xs text-gray-600 text-center max-w-3xl mx-auto">
+                <p>El trading conlleva riesgos significativos. Los resultados pasados no garantizan resultados
+                    futuros. Esta información es solo para fines educativos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/scripts.js"></script>
+
+    <!-- Init Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
